@@ -63,7 +63,7 @@
             // --------------------
 
             bindings = <
-&email  &cycle  &whole  &kp BSPC  &kp ENTER  &kp TAB  &sid  &kp LC(C)  &kp LC(V)
+&email  &cycle  &whole  &kp BSPC  &kp TAB  &kp ENTER  &sid  &kp LC(C)  &kp LC(V)
             >;
         };
 
