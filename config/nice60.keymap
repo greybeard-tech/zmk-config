@@ -52,17 +52,17 @@
         };
     };
 
-#    keymap {
-#        compatible = "zmk,keymap";
-#        rows = <3>;
-#        columns = <3>;
-#        Base {
-#            // --------------------
-#            // | ESC |  1  |  2   |
-#            // | TAB  |  Q  |  W  |
-#            // | CAPS  |  A  |  S |
-#            // --------------------
-#
+    keymap {
+        compatible = "zmk,keymap";
+        rows = <3>;
+        columns = <3>;
+        Base {
+            // --------------------
+            // | ESC |  1  |  2   |
+            // | TAB  |  Q  |  W  |
+            // | CAPS  |  A  |  S |
+            // --------------------
+
  "layouts": {
     "default_transform": {
       "name": "default_transform",
