@@ -52,18 +52,37 @@
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-        rows = <3>;
-        columns = <3>;
-        Base {
-            // --------------------
-            // | ESC |  1  |  2   |
-            // | TAB  |  Q  |  W  |
-            // | CAPS  |  A  |  S |
-            // --------------------
-
-            bindings = <
+#    keymap {
+#        compatible = "zmk,keymap";
+#        rows = <3>;
+#        columns = <3>;
+#        Base {
+#            // --------------------
+#            // | ESC |  1  |  2   |
+#            // | TAB  |  Q  |  W  |
+#            // | CAPS  |  A  |  S |
+#            // --------------------
+#
+ "layouts": {
+    "default_transform": {
+      "name": "default_transform",
+      "layout": [
+        { "row": 0, "col":  0, "x":     0, "y": 0 },
+        { "row": 0, "col":  1, "x":     1, "y": 0 },
+        { "row": 0, "col":  2, "x":     2, "y": 0 },
+       
+      
+        { "row": 1, "col":  0, "x":     0, "y": 1 },
+        { "row": 1, "col":  1, "x":     1, "y": 1 },
+        { "row": 1, "col":  2, "x":     2, "y": 1 },
+       
+      
+        { "row": 2, "col":  0, "x":     0, "y": 2 },
+        { "row": 2, "col":  1, "x":     1, "y": 2 },
+        { "row": 2, "col":  2, "x":     2, "y": 2 }
+    ]
+},
+                 bindings = <
 &email  &cycle  &whole  &kp BSPC  &kp TAB  &kp ENTER  &sid  &kp LC(C)  &kp LC(V)
             >;
         };
